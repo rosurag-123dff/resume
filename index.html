@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Game</title>
-    <link rel="stylesheet" href="typingguru.css">
+    <title>Custom Message Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h2>🔥 Typing Speed Test 🔥</h2>
-        <p id="timer">Time: 0s</p>
-        <p id="quote">Click "Start" to get a paragraph!</p>
-        <p id="displayText"></p>
-        <textarea id="userInput" placeholder="Start typing here..." disabled oninput="checkTyping()"></textarea>
-        <br>
-        <button onclick="startGame()">Start</button>
-        <button onclick="checkSpeed()">Check Speed</button>
-        <p id="result"></p>
+        <h1>Generate Unlimted Message </h1>
+        
+        <label for="userMessage">Enter Your Message:</label>
+        <input type="text" id="userMessage" placeholder="Type your message here...">
+        
+        <label for="repeatCount">How many times?</label>
+        <input type="number" id="repeatCount" placeholder="Enter a number" min="1">
+        
+        <button id="generateBtn">Generate Messages</button>
+        
+        <div id="messageBox"></div>
+        
+        <button id="copyBtn">Copy</button>
     </div>
 
-    <script src="typingguru.js">   </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
